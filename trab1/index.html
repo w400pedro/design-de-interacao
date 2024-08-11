@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kanban-board">
+        <div class="kanban-column" id="project">
+            <h2>Projeto</h2>
+            <input type="text" id="new-task" placeholder="Nova atividade" class="task-input">
+            <input type="text" id="responsavel-task" placeholder="Responsável" class="task-input">
+            <button id="add-task" class="add-task-btn">Inserir</button>
+            <div class="kanban-tasks" id="project-tasks"></div>
+        </div>
+        <div class="kanban-column" id="implementation">
+            <h2>Implementação</h2>
+            <div class="kanban-tasks" id="implementation-tasks"></div>
+        </div>
+        <div class="kanban-column" id="test">
+            <h2>Teste</h2>
+            <div class="kanban-tasks" id="test-tasks"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
