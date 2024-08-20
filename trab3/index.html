@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho Design de Interação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Consultas à BrasilAPI</h1>
+
+    <section>
+        <h2>Feriados Nacionais</h2>
+        <button onclick="fetchFeriados()">Ver Feriados</button>
+        <div id="feriados" class="result"></div>
+    </section>
+
+    <section>
+        <h2>Informações da Criptomoeda</h2>
+        <button onclick="fetchCrypto()">Ver Cotação</button>
+        <div id="crypto" class="result"></div>
+    </section>
+
+    <section>
+        <h2>Consulta de CEP</h2>
+        <form id="cepForm">
+            <input type="text" id="cepInput" placeholder="Digite o CEP" required>
+            <button type="submit">Consultar</button>
+        </form>
+        <div id="cepResult" class="result"></div>
+    </section>
+
+    <section>
+        <h2>Consulta de Banco</h2>
+        <form id="bancoForm">
+            <input type="text" id="bancoInput" placeholder="Digite o código do banco que você deseja consultar"
+                required>
+            <button type="submit">Consultar</button>
+        </form>
+        <div id="bancoResult" class="result"></div>
+    </section>
+
+    <section>
+        <h2>Promise.race</h2>
+        <button onclick="fetchWithRace()">Consultar APIs</button>
+        <div id="raceResult" class="result"></div>
+    </section>
+
+    <section>
+        <h2>Promise.all</h2>
+        <button onclick="fetchWithAll()">Consultar APIs</button>
+        <div id="allResult" class="result"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
